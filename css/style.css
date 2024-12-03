@@ -1,0 +1,14 @@
+body
+{
+    background-color: #24353f;
+}
+h1
+{
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    color: rgb(23, 162, 184);
+}
+.form-control{
+    background-color: transparent;
+}

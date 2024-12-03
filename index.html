@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="login mt-5">
+        <div class="container w-50 ">
+            <form class="text-center shadow-lg p-5">
+                <h1 class="text-capitalize py-2">smart login system</h1>
+                <input type="text" name="" id="signupName" placeholder="Enter your name" class="form-control my-3">
+                <input type="text" name="" id="signupEmail" placeholder="Enter your email" class="form-control my-3" oninput="validation()">
+                <input type="password" name="" id="signupPass" placeholder="Enter password" class="form-control my-3">
+                <button id="btnSignup" type="button" class="btn btn-outline-info w-100" onclick="addSignupData()">Sign Up</button>
+                <p id="exist" class="text-danger d-none">All inputs is exist</p>
+                
+                <input type="text" name="" id="signinEmail" placeholder="Enter your email" class="form-control my-3 d-none">
+                <input type="password" name="" id="signinPass" placeholder="Enter your password" class="form-control my-3 d-none">
+                <p id="incorrect" class="text-danger d-none">All inputs is required</p>
+                <button id="btnSignin" type="button" class="btn btn-outline-info w-100 d-none" onclick="addSigninData()"><a href="welcomePage.html">Login</a></button>
+
+                <p class="text-white pt-4">You have an account? <a href="#" onclick="switchSignin()" id="aSignin">Signin</a> <a href="" class="d-none" onclick="" id="aSignup">signup</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
